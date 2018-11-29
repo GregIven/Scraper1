@@ -16,3 +16,8 @@ soup_two = BeautifulSoup(html_content)
 #find all <p> tags
 
 p_one = soup_two.find_all('p')
+
+#get the text of a <p> tag
+
+p_one[10].contents #this gives the text as a list
+
