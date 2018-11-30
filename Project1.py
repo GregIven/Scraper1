@@ -21,3 +21,6 @@ p_one = soup_two.find_all('p')
 
 p_one[10].contents #this gives the text as a list
 
+#turn soup object contents into string
+
+p_string = str(p_one)
