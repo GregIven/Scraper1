@@ -24,3 +24,15 @@ p_one[10].contents #this gives the text as a list
 #turn soup object contents into string
 
 p_string = str(p_one)
+
+#Idea for getting track lists, albums and artists from spotify... Look for id contains 'tracklist'
+
+
+#Using selenium to get elements
+from selenium import webdriver
+driver = webdriver.Chrome() #this is for chrome browser
+heading = driver.find_element_by_class_name('class name here')
+#If list have to print in for loop
+if type(heading) == lists:
+    for head in heading:
+        print(head.text.strip())
