@@ -35,9 +35,10 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
 driver.get('https://open.spotify.com/browse/featured')
 
-button = wd.find_element_by_class_name('btn-white')
+button = driver.find_element_by_class_name('btn-white')
 button.click()
 
-
+#getting tracklist find_element_by_class_name
+tracklist = driver.find_element_by_class_name('tracklist-name').text
 
 #Updated
