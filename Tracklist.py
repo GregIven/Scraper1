@@ -27,4 +27,16 @@ element = wait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//span[t
 element.click()
 
 driver.find_element_by_xpath("//a[contains(@href,'/collection/tracks')]").click()
+
+#This continually scrolls to the bottom of the page
+driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+#alternatively
+
+from selenium.webdriver.common.keys import Keys
+bg = driver.find_element_by_css_selector('body')
+bg.send_keys(Keys.SPACE) #whatever the page down key is
+
+tracklist = driver.find_elements_by_class_name('tracklist-name')
+
 #button = driver.find_element_by_class_name('btn-white').click()
