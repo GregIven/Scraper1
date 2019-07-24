@@ -845,3 +845,7 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
 
+Exiting due to channel error.
+[Child 23097, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-SOyC__/firefox-66.0.5+linuxmint1+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+Exiting due to channel error.
+Exiting due to channel error.

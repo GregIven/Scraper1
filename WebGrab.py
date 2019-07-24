@@ -15,7 +15,7 @@ innerHTML = browser.execute_script("return document.body.innerHTML") #returns th
 soup = BeautifulSoup(innerHTML)
 elems = browser.find_elements_by_css_selector('.jl')
 browser.implicitly_wait(10)
-'''
+''''
 True
 
 def launch():
